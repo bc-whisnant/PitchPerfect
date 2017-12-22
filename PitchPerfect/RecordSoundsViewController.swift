@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
 import AVFoundation
+
+
 //class conforms to avnaudiorecorderdelegate protocol
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
@@ -25,7 +26,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         stopRecordingButton.isEnabled = false
     }
-    
+    //added function to alter ui based on state of recording 
     func configureUI(isRecording: Bool) {
         if isRecording {
             print("record button was pressed.")

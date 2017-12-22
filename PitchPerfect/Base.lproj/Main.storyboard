@@ -25,8 +25,14 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvT-IX-vG8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-FZ-3eG">
+                                <rect key="frame" x="110" y="408" width="155" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-Ri-ytY">
-                                <rect key="frame" x="155" y="449" width="64" height="64"/>
+                                <rect key="frame" x="155" y="432" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Fpp-A7-1bc"/>
                                     <constraint firstAttribute="width" constant="64" id="Z4e-Jv-P7i"/>
@@ -36,21 +42,16 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sju-6F-9SS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap To Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-FZ-3eG">
-                                <rect key="frame" x="130" y="418" width="115.5" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="centerX" secondItem="A8W-Ri-ytY" secondAttribute="centerX" id="9Iu-9y-Ybu"/>
                             <constraint firstItem="qaL-M4-CoN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GSH-j0-bXh"/>
-                            <constraint firstItem="A8W-Ri-ytY" firstAttribute="top" secondItem="3yY-FZ-3eG" secondAttribute="bottom" constant="8" id="N3t-Av-Kih"/>
-                            <constraint firstItem="A8W-Ri-ytY" firstAttribute="centerX" secondItem="3yY-FZ-3eG" secondAttribute="centerX" constant="-10.25" id="Syr-Ei-yzN"/>
-                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="top" secondItem="qaL-M4-CoN" secondAttribute="bottom" constant="8" id="Td1-Do-qka"/>
-                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="centerX" secondItem="qaL-M4-CoN" secondAttribute="centerX" constant="9.75" id="pZD-59-pB5"/>
+                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="top" secondItem="qaL-M4-CoN" secondAttribute="bottom" constant="-3" id="Hld-zW-dLZ"/>
+                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="trailing" secondItem="qaL-M4-CoN" secondAttribute="trailing" id="cgL-50-ojI"/>
+                            <constraint firstItem="3yY-FZ-3eG" firstAttribute="leading" secondItem="qaL-M4-CoN" secondAttribute="leading" id="pro-f5-XVz"/>
                             <constraint firstItem="qaL-M4-CoN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uXh-kf-lop"/>
+                            <constraint firstItem="A8W-Ri-ytY" firstAttribute="top" secondItem="3yY-FZ-3eG" secondAttribute="bottom" constant="2" id="wrO-xW-677"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
